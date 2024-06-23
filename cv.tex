@@ -31,13 +31,21 @@
 \fi
 
 % Change the colours if you want to
-\definecolor{VividPurple}{HTML}{083912}
+\definecolor{Black}{HTML}{000000}
+\definecolor{VividPurple}{HTML}{1C0E62}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{2E2E2E}
-\colorlet{heading}{VividPurple}
-\colorlet{accent}{VividPurple}
+\definecolor{Turqoise}{HTML}{0C5437}
+\colorlet{heading}{Black}
+\colorlet{accent}{Black}
 \colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
+\colorlet{body}{Black}
+\hypersetup{
+    colorlinks,
+    citecolor=Turqoise,
+    linkcolor=Red,
+    urlcolor=Turqoise
+}
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -64,7 +72,7 @@
     \end{fullwidth}
 
     %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-    \AtBeginEnvironment{itemize}{\small}
+    % \AtBeginEnvironment{itemize}{\small}
 
     %% Right-side content is included there
     \input{cv_content_leftside.tex}

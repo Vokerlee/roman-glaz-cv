@@ -16,7 +16,7 @@
 % - https://github.com/stefanogermano Fixed bad boxes and undefined font shape (July 2018)
 % - https://github.com/foohyfooh Fixed blank spaces in \cvevent and bad link in README.md (June 2018)
 
-\usepackage{hyperref}
+\usepackage[colorlinks]{hyperref}
 \usepackage{savesym} % for no errors
 \savesymbol{maketitle}
 
