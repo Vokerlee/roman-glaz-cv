@@ -1,0 +1,68 @@
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[cv_content_rightside]{Experience}
+
+    \cvevent{Assistant-engineer}{\href{https://career.huawei.ru/rri/en/}{Huawei RRI}}{july 2022 -- now}{}
+    \begin{itemize}
+        \item Coauthor of international patent (PCT): Computing performance improving method and
+            electronic device (application not published yet).
+        \smallskip
+        \item Created and took part in creation of architecture-dependent (ARM64) performance/power
+            models and algorithms related to Linux kernel scheduler \& frequencies scaling.
+    \end{itemize}
+
+% \divider
+
+\cvsection{Pet projects}
+    \smallskip
+
+    \begin{itemize}
+        \item \href{https://github.com/Vokerlee/riscv64-simulator}
+                   {RISC-V 64-bit functional simulator} -- custom simulator with RV64IM instructions
+            interpretation via threaded-code, MMU \& TLB.
+        \item \href{https://github.com/Vokerlee/EVM}
+                   {Echo Virtual Machine (EVM)} -- custom register-based virtual machine
+            with incremental garbage collector.
+        \item \href{https://github.com/Vokerlee/VSSH}
+                   {Vokerlee SSH} -- custom secure shell implementation (TCP + UDP with delivery guarantee)
+            with symmetric \& asymmetric encryption, linux virtual terminals \& cgroups.
+        \item \href{https://github.com/Vokerlee/linux-api-course/tree/master/5.%20Daemon-backuper}
+                   {Incremental $inotify$ daemon-backuper} -- incremental backup-system (daemon), implemented via $inotify$
+            Linux kernel subsystem.
+        \item Gem5 \& Linux:
+        \begin{enumerate}
+            \item \href{https://github.com/Vokerlee/gem5-arm-dev}
+                       {Gem5} -- added cache PMU events for ARM64, 3-level cache CPU-cluster system.
+            \item \href{https://github.com/Vokerlee/linux-6.1-arm-gem5}
+                       {Linux 6.1 patches for Gem5} -- implemented $cpufreq$ \& $devfreq$ drivers (+ $clk$)
+                for DVFS support for all components in Gem5.
+        \end{enumerate}
+        \item \href{https://github.com/Vokerlee/llvm-practice}
+                   {LLVM practise} -- LLVM front-end of imperative language \& own LLVM back-end of RISC-V like
+            architecture with custom graphics extensions.
+        \item \href{https://github.com/Vokerlee/cpu-riscv64-pipeline}
+                   {RISC-V 64-bit verilog simulator} -- simulator of executable file with RV64I instructions written in
+            System Verilog language.
+
+    \end{itemize}
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% \divider
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+% \divider
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
