@@ -18,6 +18,7 @@
 
 \usepackage[colorlinks]{hyperref}
 \usepackage{savesym} % for no errors
+\usepackage{fontawesome5}
 \savesymbol{maketitle}
 
 %%%%%%%%%%%%%%%%
@@ -40,7 +41,6 @@
 \LoadClass{extarticle}
 
 \RequirePackage[margin=1cm]{geometry}
-\RequirePackage{fontawesome}
 \RequirePackage{ifxetex,ifluatex}
 \RequirePackage{scrlfile}
 
@@ -132,6 +132,7 @@
 \newcommand{\homepagesymbol}{\faChain}
 \newcommand{\locationsymbol}{\faMapMarker}
 \newcommand{\linkedinsymbol}{\faLinkedin}
+\newcommand{\telegramsymbol}{\faTelegram}
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
@@ -146,6 +147,7 @@
 \newcommand{\mailaddress}[1]{\printinfo{\mailsymbol{#1}}}
 \newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{#1}}
+\newcommand{\telegram}[1]{\printinfo{\telegramsymbol}{#1}}
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
